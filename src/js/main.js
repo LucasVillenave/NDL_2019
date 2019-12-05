@@ -1,8 +1,7 @@
 //faire page error en html + changement text
 
 class MainPage {
-    constructor ()
-    {
+    constructor() {
         this.option = {
             favorite: false,
             Recent: true
@@ -10,8 +9,7 @@ class MainPage {
         this.init();
     }
 
-    toggle_content(page)
-    {
+    toggle_content(page) {
         switch (page) {
             case "coucou":
                 $("#elemClic").fadeIn("fast");
@@ -24,8 +22,7 @@ class MainPage {
         }
     }
 
-    init()
-    {
+    init() {
         let tmp;
 
         this.toggle_content("coucou");
@@ -39,7 +36,6 @@ class MainPage {
         tmp.on('click', () => {
             this.toggle_content("coucou");
         });
-        
     }
 }
 

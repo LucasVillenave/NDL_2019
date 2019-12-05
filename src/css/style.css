@@ -2,10 +2,23 @@ h1{
     text-align: center;
 }
 
+.truc{
+    margin-top : 12%;
+    margin-left : 7%;
+    color: black;
+}
+
+.input_t{
+    margin-left : 7%;
+}
 .red{
     color:red;
 }
 
 .green{
     color: green;
+}
+
+#resp{
+    margin-left : 25px;
 }
