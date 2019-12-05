@@ -9,3 +9,9 @@ h1{
 .green{
     color: green;
 }
+
+.crousInputText{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 20px;
+}
