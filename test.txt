@@ -1,1 +1,44 @@
 coucou
+
+
+
+CAF --> 1 PAGE
+CROUS --> 1 PAGE
+BANK !!! --> 1 PAGE
+SECU --> 1 PAGE
+
+
+
+HTML 1
+    liste des choses qui ne vont pas dans la vie etudiante. (color red)
+        liste des organismes pour aider.
+            --> redirige vers les pages de l'organisme 
+            --> "administratif" a regler
+                --> (color green)
+
+    
+
+    Bonjour étudiant !
+    Cette année s'annonce difficile, tu passera certainement par des moments de doutes, des moments de stress.
+    Tu te perdra surement entre famille, travail et papiers administratifs, tes études s'en retrouveront compromises dû  à la précarité... :'(
+    Pas d'inquiétude, nous sommes là pour T'AIDER !!! :D
+
+    A ce jour tu ne subviendra pas à tes besoins, mais voici la liste des organismes susceptibles de t'aider dans cette lutte :
+        (color red) CAF //(color green) si réussi
+        (color red) CROUS //(color green) si réussi
+        (color red) BANK //(color green) si réussi
+        (color red) SECU //(color green) si réussi
+
+    Ainsi que de tes besoins :
+        (color red) LOGEMENT //(color green) si réussi
+        (color red) RENTREE FINANCIERE //REGULARITE (color green) si réussi
+        (color red) PEPIN THUNE SI PAS ASSEZ //(color green) si réussi
+        (color red) ASSURANCES //(color green) si réussi
+        (color red) TRANSPORTS //(color green) si réussi
+
+
+
+
+PAGE FINALE
+    Bravo à toi étudiant, tu es maintenant en possession de tout ce qu'il faut afin de mener ta vie jusqu'au diplôme a bien.
+    Le succès est entre tes mains
