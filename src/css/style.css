@@ -21,4 +21,11 @@ h1{
 
 #resp{
     margin-left : 25px;
+
+}
+
+.crousInputText{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 20px;
 }
