@@ -125,10 +125,7 @@ body{
 #au_revoir{
     margin-left: 10px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 323a8965a2ae10b7fb001666abeca10c98aaec5e
 #toProfilHome {
     float: right;
 }
@@ -143,8 +140,6 @@ body{
 
 .red-clickable:hover {
     cursor: pointer;
-<<<<<<< HEAD
-    align-items: ;
 }
 
 .kabla:hover{
@@ -153,6 +148,4 @@ body{
 
 .BLYAT:hover{
     cursor: pointer;
-=======
->>>>>>> 323a8965a2ae10b7fb001666abeca10c98aaec5e
 }

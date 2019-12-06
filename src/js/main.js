@@ -43,14 +43,17 @@ class MainPage {
                 $("#Caf").hide();
                 $("#Secu").hide();
                 $("#Bank").hide();
+                $("#404").hide();
                 $("#Crous").hide();
                 $("#Profil").hide();
+                $("#End").hide();
                 break;
             case "Caf":
                 $("#Home").hide();
                 $("#Caf").fadeIn("fast");
                 $("#Secu").hide();
                 $("#Bank").hide();
+                $("#404").hide();
                 $("#Crous").hide();
                 $("#Profil").hide();
                 break;
@@ -67,6 +70,7 @@ class MainPage {
                 $("#Caf").hide();
                 $("#Secu").hide();
                 $("#Bank").fadeIn("fast");
+                $("#404").hide();
                 $("#Profil").hide();
                 $("#Crous").hide();
                 break;
@@ -76,6 +80,7 @@ class MainPage {
                 $("#Secu").hide();
                 $("#Bank").hide();
                 $("#Crous").fadeIn("fast");
+                $("#404").hide();
                 $("#Profil").hide();
                 break;
             case "Profil":
@@ -84,7 +89,22 @@ class MainPage {
                 $("#Secu").hide();
                 $("#Bank").hide();
                 $("#Crous").hide();
+                $("#404").hide();
                 $("#Profil").fadeIn("fast");
+                break;
+                case "404":
+                    $("#Home").hide();
+                    $("#Caf").hide();
+                    $("#Secu").hide();
+                    $("#Bank").hide();
+                    $("#Crous").hide();
+                    $("#Profil").hide();
+                    $("#404").fadeIn("fast");
+                    break;
+            case "End":
+                $("#Home").hide();
+                $("#End").fadeIn("fast");
+                $("#404").hide();
                 break;
         }
     }
@@ -122,6 +142,15 @@ class MainPage {
             this.toggle_content("Profil");
         });
 
+        tmp = $("#validall");
+        tmp.on('click', () => {
+            if (this.done >= 4) {
+                this.toggle_content("End");
+                console.log("yes");
+            }
+        });
+        
+
         //Bank
         tmp = $("#toBankHome");
         tmp.on('click', () => {
@@ -154,11 +183,12 @@ class MainPage {
                 if (val1 + val2 <= 10000) {
                     if ($('#resp1').val() != this.profil.Revenus) {
                         $('#resp4444444444444444444').text("Error 404");
-                        //Redirect 404
+                        this.toggle_content("404");
                     } else {
                         this.profil.Montant_compte =+ val1;
                         $("#BankHomeLink").addClass("green");
                         $("#BankHomeLink").removeClass("red-clickable");
+                        this.done += 1;
                     }
                     $('#resp1').text("revenus suffisant");
                     $('#resp1').addClass("green");
@@ -305,6 +335,128 @@ class MainPage {
             }
         });
         //secu--
+
+        //profil
+        tmp = $('#resp_profile42');
+        tmp.on('click', () => {
+            this.profil.Travail = "job etudiant";
+            $('#resp_profile42').text("job etudiant");
+            this.profil.Revenus += 400;
+        });
+
+        tmp = $('#FromProfiltoHome');
+        tmp.on('click', () => {
+            this.toggle_content("Home");
+        });
+        
+
+        tmp = $('#resp_profile6');
+        tmp.on('click', () => {
+            this.profil.ratachement_fiscal = "seul";
+            $('#resp_profile6').text("seul");
+            this.profil.Revenus -= 18000;
+        });
+
+        $('#resp_profile1').text(this.profil.Nom);
+        $('#resp_profile2').text(this.profil.Prénom);
+        $('#resp_profile3').text(this.profil.Logement);
+        $('#resp_profile4').text(this.profil.Revenus);
+        $('#resp_profile5').text(this.profil.Montant_compte);
+        $('#resp_profile6').text(this.profil.ratachement_fiscal);
+        $('#resp_profile12').text(this.profil.Age);
+        $('#resp_profile42').text(this.profil.Travail);
+        $('#resp_profilesss').text(this.profil.Aides);
+        $('#resp_profile1').addClass("profile_class");
+        $('#resp_profile2').addClass("profile_class");
+        $('#resp_profile3').addClass("profile_class");
+        $('#resp_profile4').addClass("profile_class");
+        $('#resp_profile5').addClass("profile_class");
+        $('#resp_profile6').addClass("kabla");
+        $('#resp_profile12').addClass("profile_class");
+        $('#resp_profile42').addClass("BLYAT");
+        $('#resp_profilesss').addClass("profile_class");
+        //profil--
+
+        //Crous
+        tmp = $("#toCrousHome");
+        tmp.on('click', () => {
+            this.toggle_content("Home");
+        });
+
+        tmp = $("#validerCrous");
+        $("#nomCrous").val("");
+        $("#prenomCrous").val("");
+        $("#ageCrous").val(18);
+        $("#revenusCrous").val("");
+        tmp.on('click', () => {
+            console.log(this.profil);
+            if($("#nomCrous").val()==this.profil.Nom && $("#prenomCrous").val()==this.profil.Prénom && $("#ageCrous").val()==this.profil.Age && $("#revenusCrous").val()==this.profil.Revenus){
+                if(this.profil.Revenus==0){
+                    this.profil.Aide+=100;
+                    this.profil.Logement="Logement CROUS";
+                }
+                else{
+                    this.profil.Aide+=200;
+                    this.profil.Logement="Logement CROUS";
+                }
+                $("#resultatCrous").text("Nom correct !");
+                $("#resultatCrous").addClass("green");
+                $("#resultatCrous").removeClass("red");
+                $("#CrousHomeLink").addClass("green");
+                $("#CrousHomeLink").removeClass("red-clickable");
+                this.done += 1;
+            }
+            else{
+                $("#resultatCrous").text("Redirection fausse déclaration");
+                $("#resultatCrous").addClass("red");
+                $("#resultatCrous").removeClass("green");
+            }
+        });        
+        //Crous--
+
+        //Caf
+        tmp = $('#toCafHome');
+        tmp.on('click', () => {
+            this.toggle_content("Home");
+        });
+        tmp = $("#input_value").keypress(function (e) {
+            //if the letter is not digit then display error and don't type anything
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                //display error message
+                $("#errmsg").html("Digits Only").show().fadeOut("fast");
+                return false;
+            }
+        });
+        tmp = $("#input_submittt");
+        tmp.on('click', () => {
+            $('#raspoutine').text("");
+            if ($("#bonjour").val() == this.profil.Revenus) {
+                if ($("#au_revoir").val() == "Logement CROUS") {
+                    $('#resp').text("eligible");
+                    $('#resp').removeClass("red");
+                    $('#resp').addClass("green");
+                    this.done += 1;
+                    $("#CafHomeLink").addClass("green");
+                    $("#CafHomeLink").removeClass("red-clickable");
+                } else {
+                    $('#resp').text("non eligible");
+                    $('#resp').removeClass("green");
+                    $('#resp').addClass("red");
+                    this.toggle_content("404");
+                }
+            } else {
+                $('#resp').text("non eligible");
+                $('#resp').removeClass("green");
+                $('#resp').addClass("red");
+                this.toggle_content("404");
+            }
+        });
+        //Caf --
+        tmp = $('#to404home');
+        tmp.on('click', () => {
+            this.toggle_content("Home");
+        });
+        
     }
 }
 

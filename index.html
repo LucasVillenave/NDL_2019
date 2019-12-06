@@ -41,13 +41,14 @@
 					<ul>
 						Ainsi que de tes besoins :
 						<center>
-							<li class="red-clickable">Logement</li>
-							<li class="red-clickable">Rentrées Financieres</li>
-							<li class="red-clickable">Pepin thune si pas assez</li>
-							<li class="red-clickable">Assurances</li>
-							<li class="red-clickable">Transports</li>
+							<li >Logement</li>
+							<li >Rentrées Financieres</li>
+							<li >Pepin thune si pas assez</li>
+							<li >Assurances</li>
+							<li >Transports</li>
 						</center>
 					</ul>
+					<center><input type="button" id="validall" value="Valider"></center>
 				</div>
 				<div style="flex:1;float: right;">
 					<img src="./assets/pubhome2.png"/>
@@ -132,15 +133,161 @@
 			</div>
 		</div>
 		</div>
-		<div id="Caf">
-			Caf
+		<div id="Caf" style="display: flex;flex-direction: row;">
+			<span id="toCafHome"><- Retour</span>
+			<div style="flex: 1;">
+			</div>
+			<div style="flex: 2;">
+				<div id="CAF">
+					<h1 class="red">Caisse d'allocations familliales</h1>
+					<p class="trucss">
+						Demande allocation
+					</p>
+					</br>
+					<span class="input_tt"> revenus
+						<input type="text" id="bonjour" size="10">
+						<span id="resp"></span>
+					</span>
+					</br>
+					</br>
+					<span class="input_tt"> logement
+						<input type="text" id="au_revoir" size="10">
+						<span id="resp"></span>
+					</span>
+					</br>
+					</br>
+					<input type="button" value="valider" id="input_submittt">
+					<span id="raspoutine"></span>
+				</div>
+			</div>
+			<div style="flex: 1;">
+			</div>
 		</div>
-		<div id="Crous">
-			Crous
+		<div id="Crous" style="display: flex;flex-direction: row;">
+			<span id="toCrousHome"><- Retour</span>
+				<div style="flex: 1;">
+				</div>
+				<div style="flex: 2;">
+					<h1 class="red">Bienvenue sur la page d'aide au CROUS</h1>
+			
+					<form>
+						Nom : <input type="text" id="nomCrous" value="" class="crousInputText"><br />
+						Prénom : <input type="text" id="prenomCrous" size="16" value="" class="hissou"><br />
+						Âge : <select id="ageCrous" size="1" class="crousInputText">
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+						</select><br />
+						Revenus : <input type="text" id="revenusCrous" value="" class="crousInputText">
+						<p>
+							<input type="button" id="validerCrous" value="Valider" class="crousButton">
+							<div id="resultatCrous"></div>
+						</p>
+					</form>
+				</div>
+				<div style="flex: 1;">
+				</div>
 		</div>
 		<div id="Profil">
-				Profil
-			</div>
+			<span id="FromProfiltoHome"><- Retour</span>
+				<div id="crous" style="display: flex;flex-direction: row;">
+					<div style="flex: 1;">
+					</div>
+					<div style="flex: 12;">
+						<div id="profile">
+							<center><label id="TitrePage">Profil personnel</label></center>
+			
+							<h1 class="red">Profil</h1>
+							<center>
+								</br>
+								<p>
+									Ceci est vôtre profile personnel, il contient toutes les </br>
+									informations dont vous avez besoins pour remplir vos dossiers
+								</p>
+								<p class="trucs">
+									Données Personnelles
+								</p>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>Nom </span>
+									<span id="resp_profile1"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>Prenom</span>
+									<span id="resp_profile2"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>Age </span>
+									<span id="resp_profile12"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>Logement</span>
+									<span id="resp_profile3"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>travail</span>
+									<span id="resp_profile42"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>Revenus annuel</span>
+									<span id="resp_profile4"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>Aides </span>
+									<span id="resp_profilesss"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>montant actuel compte</span>
+									<span id="resp_profile5"></span>
+								</span>
+								</br>
+								</br>
+								<span class="input_t, profil_carac_container">
+									<span class='carac_profile'>ratachement fiscale</span>
+									<span id="resp_profile6"></span>
+								</span>
+							</center>
+						</div>
+					</div>
+					<div style="flex: 1;">
+					</div>
+				</div>
+		</div>
+		<div id="404">
+			<span id="to404home"> <- Retour </span>
+			<img src="./assets/voleur-d'apl.gif" style="width: 50%;height: 25%;"/>
+		</div>
+		<div id="End" style="flex-direction:column">
+				<h1> You Win ! </h1>
+				<center>
+					<img src="./assets/voleur-d'apl.gif" style="width: 50%;height: 25%;"/>
+				</center>
+		</div>
 		<div id="footer">
 			<hr/>
 			<div id="enderfooter">
