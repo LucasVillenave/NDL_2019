@@ -8,6 +8,12 @@ h1{
     color: black;
 }
 
+.trucs{
+    margin-top : 12%;
+    color: black;
+    font-size : 25px;
+}
+
 .input_t{
     margin-left : 7%;
 }
@@ -40,4 +46,18 @@ h1{
 
 #margin_left{
     margin-left : 263px;
+}
+
+.carac_profile{
+    flex: 1;
+    text-align: left;
+}
+
+.profile_class {
+    text-align: left;
+}
+
+.profil_carac_container {
+    display: flex;
+    width : 25%;
 }
