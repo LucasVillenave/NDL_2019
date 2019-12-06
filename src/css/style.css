@@ -50,7 +50,6 @@ body{
 
 .green{
     color: green;
-    position: absolute;
 }
 
 #enderfooter {
@@ -130,7 +129,7 @@ body{
     float: right;
 }
 
-#toProfilHome:hover {
+#toProfilHome:hover , #toBankHome:hover{
     cursor : pointer;
 }
 
@@ -140,5 +139,4 @@ body{
 
 .red-clickable:hover {
     cursor: pointer;
-    align-items: ;
 }
