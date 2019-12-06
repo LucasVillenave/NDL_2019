@@ -2,6 +2,10 @@ h1{
     text-align: center;
 }
 
+body{
+    background-color: #d1d1d1;
+}
+
 .truc{
     margin-top : 12%;
     margin-left : 7%;
@@ -35,9 +39,15 @@ h1{
 }
 
 .crousInputText{
-    padding-top: 10px;
-    text-align: left;
+    margin-top: 40px;
+    text-align: justify;
     font-size: 20px;
+}
+
+.crousButton{
+    margin-left: 50%;
+    width: 20em;
+    height: 2em;
 }
 
 #input_value1{
