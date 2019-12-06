@@ -7,23 +7,6 @@ class MainPage {
         this.init();
     }
 
-    toggle_content(page) {
-        switch (page) {
-            case "click":
-                if ($("#input_value").val() < 1500) {
-                    $('#resp').text("eligible");
-                    $('#resp').removeClass("red");
-                    $('#resp').addClass("green");
-                } else {
-                    $('#resp').text("non eligible");
-                    $('#resp').removeClass("green");
-                    $('#resp').addClass("red");
-
-                }
-                break;
-        }
-    }
-
     init() {
         let tmp;
         this.toggle_content("coucou");
@@ -36,9 +19,17 @@ class MainPage {
             }
         });
         //Click on add Img
-        tmp = $("#input_submit");
+        tmp = $("#input_submittt");
         tmp.on('click', () => {
-            this.toggle_content("click");
+            if ($("#input_value").val() < 1500) {
+                $('#resp').text("eligible");
+                $('#resp').removeClass("red");
+                $('#resp').addClass("green");
+            } else {
+                $('#resp').text("non eligible");
+                $('#resp').removeClass("green");
+                $('#resp').addClass("red");
+            }
         });
 
 
