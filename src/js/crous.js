@@ -3,42 +3,31 @@
 class MainPage {
     constructor ()
     {
-        this.option = {
-            favorite: false,
-            Recent: true
-        };
+        this.nom="Pelaise";
+        this.prenom="Jon";
         this.init();
-    }
-
-    toggle_content(page)
-    {
-        switch (page) {
-            case "step1":
-                $("#NomPrenom").hide();
-                break;
-            case "bye":
-                $("#elemClic").hide();
-                $("#affichage").fadeIn("fast");
-                break;
-        }
     }
 
     init()
     {
         let tmp;
 
-        this.toggle_content("step1");
-
         //Click on add Img
-        tmp = $("#elemClic");
+        tmp = $("#validerCrous");
+        $("#nomCrous").val("");
+        $("#prenomCrous").val("");
         tmp.on('click', () => {
-            this.toggle_content("bye");
-        });
-        tmp = $("#affichage");
-        tmp.on('click', () => {
-            this.toggle_content("coucou");
-        });
-        
+            if($("#nomCrous").val()==this.nom && $("#prenomCrous").val()==this.prenom){
+                $("#resultatCrous").text("Nom correct !");
+                $("#resultatCrous").addClass("green");
+                $("#resultatCrous").removeClass("red");
+            }
+            else{
+                $("#resultatCrous").text("Nom et/ou Prenom incorrect !");
+                $("#resultatCrous").addClass("red");
+                $("#resultatCrous").removeClass("green");
+            }
+        });        
     }
 }
 
