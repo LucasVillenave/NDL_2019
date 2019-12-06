@@ -6,14 +6,13 @@ class MainPage {
         this.nom="Pelaise";
         this.prenom="Jon";
         this.age=19;
-        this.revenus;
+        this.revenus=0;
         this.init();
     }
 
     init()
     {
         let tmp;
-        let aide=0;
 
         //Click on add Img
         tmp = $("#validerCrous");
@@ -25,9 +24,11 @@ class MainPage {
             if($("#nomCrous").val()==this.nom && $("#prenomCrous").val()==this.prenom && $("#ageCrous").val()==this.age && $("#revenusCrous").val()==this.revenus){
                 if(this.revenus==0){
                     this.profile.Aide+=100;
+                    this.profile.Logement="Logement CROUS";
                 }
                 else{
                     this.profile.Aide+=200;
+                    this.profile.Logement="Logement CROUS";
                 }
                 $("#resultatCrous").text("Nom correct !");
                 $("#resultatCrous").addClass("green");

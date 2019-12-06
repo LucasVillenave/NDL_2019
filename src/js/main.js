@@ -86,7 +86,6 @@ class MainPage {
                 $("#Crous").hide();
                 $("#Profil").fadeIn("fast");
                 break;
-
         }
     }
 

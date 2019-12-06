@@ -45,12 +45,11 @@ body{
 
 .crousInputText{
     margin-top: 40px;
-    text-align: justify;
     font-size: 20px;
 }
 
 .crousButton{
-    margin-left: 50%;
+    margin-left: 33%;
     width: 20em;
     height: 2em;
 }
@@ -83,6 +82,29 @@ body{
 .profil_carac_container {
     display: flex;
     width : 25%;
+}
+
+#input_submittt{
+    margin-left: 200px;
+}
+
+.trucss{
+    margin-top : 14%;
+    color: black;
+    font-size : 25px;
+    margin-left : 10%;
+}
+
+.input_tt{
+    margin-left: 11%;
+}
+
+#bonjour{
+    margin-left: 20px;
+}
+
+#au_revoir{
+    margin-left: 10px;
 }
 
 #toProfilHome {
