@@ -30,9 +30,26 @@ body{
     color:red;
 }
 
+.margeNom{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 34px;
+}
+
+.margePrenom{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.margeAge{
+    margin-top: 40px;
+    font-size: 12px;
+    margin-left: 39px;
+}
+
 .green{
     color: green;
-    position: absolute;
 }
 
 #enderfooter {
@@ -108,11 +125,15 @@ body{
 #au_revoir{
     margin-left: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 323a8965a2ae10b7fb001666abeca10c98aaec5e
 #toProfilHome {
     float: right;
 }
 
-#toProfilHome:hover {
+#toProfilHome:hover , #toBankHome:hover{
     cursor : pointer;
 }
 
@@ -122,6 +143,7 @@ body{
 
 .red-clickable:hover {
     cursor: pointer;
+<<<<<<< HEAD
     align-items: ;
 }
 
@@ -131,4 +153,6 @@ body{
 
 .BLYAT:hover{
     cursor: pointer;
+=======
+>>>>>>> 323a8965a2ae10b7fb001666abeca10c98aaec5e
 }
