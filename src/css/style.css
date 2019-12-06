@@ -29,3 +29,15 @@ h1{
     text-align: left;
     font-size: 20px;
 }
+
+#input_value1{
+    margin-left : 54px;
+}
+
+#input_value2{
+    margin-left : 10px;
+}
+
+#margin_left{
+    margin-left : 263px;
+}

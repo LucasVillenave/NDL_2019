@@ -9,16 +9,14 @@ class MainPage {
 
     toggle_content(page) {
         switch (page) {
-            case "coucou":
-                $("#rip").hide();
-                $("#nicu").hide();
-                break;
             case "click":
                 if ($("#input_value").val() < 1500) {
                     $('#resp').text("eligible");
+                    $('#resp').removeClass("red");
                     $('#resp').addClass("green");
                 } else {
                     $('#resp').text("non eligible");
+                    $('#resp').removeClass("green");
                     $('#resp').addClass("red");
 
                 }
