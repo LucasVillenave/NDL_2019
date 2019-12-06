@@ -2,6 +2,11 @@ h1{
     text-align: center;
 }
 
+
+li {
+    list-style-type: none;
+}
+
 body{
     background-color: #d1d1d1;
 }
@@ -27,9 +32,10 @@ body{
 
 .green{
     color: green;
+    position: absolute;
 }
 
-#footer {
+#enderfooter {
     display: flex;
     flex-direction: row;
 }
@@ -40,7 +46,6 @@ body{
 
 .crousInputText{
     margin-top: 40px;
-    text-align: justify;
     font-size: 20px;
 }
 
@@ -80,6 +85,7 @@ body{
     width : 25%;
 }
 
+<<<<<<< HEAD
 #input_submittt{
     margin-left: 200px;
 }
@@ -101,4 +107,21 @@ body{
 
 #au_revoir{
     margin-left: 10px;
+=======
+#toProfilHome {
+    float: right;
+}
+
+#toProfilHome:hover {
+    cursor : pointer;
+}
+
+.red-clickable {
+    color: red;
+}
+
+.red-clickable:hover {
+    cursor: pointer;
+    align-items: ;
+>>>>>>> ab1bebc914d76d092bf13591e1620efce477dd69
 }
