@@ -9,7 +9,7 @@ class MainPage {
             Montant_compte: 0,
             ratachement_fiscal: "parents",
             Travail: "aucun",
-            Aides: "aucunes"
+            Aides: 0
         };
         this.init();
     }
