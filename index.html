@@ -8,46 +8,81 @@
 	<body>
 		<div id="header">
 			<center>
-				<span>logo</span>
+				<img src="./assets/Logo.png"/>
 			</center>
+			<hr/>
 		</div>
-		<div id="main">
-			<span id="toProfile">Profile</span>
-			<h1 class="red">Bienvenue a la nuit de l'info</h1>
-			<center>
-				<p>
-					Bonjour étudiant !<br/>
-					Cette année s'annonce difficile, tu passera certainement par des moments de doutes, des moments de stress.<br/>
-					Tu te perdras surement entre famille, travail et papiers administratifs, tes études s'en retrouveront compromises dû à la précarité... :'(<br/>
-					Pas d'inquiétude, nous sommes là pour T'AIDER !!! :D<br/>
-				</p>
-			</center>
-			<ul>
-				A ce jour tu ne subviendra pas à tes besoins, mais voici la liste des organismes susceptibles de t'aider dans cette lutte :
-				<li class="red">CAF</li>
-				<li class="red">CROUS</li>
-				<li class="red">BANK</li>
-				<li class="red">SECU</li>
-			</ul>
-			<ul>
-				Ainsi que de tes besoins :
-				<li class="red">Logement</li>
-				<li class="red">Rentrées Financieres</li>
-				<li class="red">Pepin thune si pas assez</li>
-				<li class="red">Assurances</li>
-				<li class="red">Transports</li>
-			</ul>
-		</div>
-		<div id="footer">
-			<div>Create By :<br/>
-				Tanguy Bérazateguy<br/>
-				Samuel Caillot<br/>
-				Chloe Guimberteau<br/>
-				Alix Houlez<br/>
-				Jhon Lavoix<br/>
-				Déborat Nash<br/>
+		<div id="Home">
+			<div style="display: flex; flex-direction: row;">
+				<div style="flex:1">
+					<img src="./assets/pubhom1.png"/>
+					<img src="./assets/pubhome3.png"/>
+				</div>
+				<div style="flex:2">
+					<input type="button" id="toProfilHome" value="Profil"/>
+					<h1>Bienvenue sur Étu-Aide !</h1>
+					<center>
+						<p>
+							Bonjour étudiant !<br/>
+							Cette année s'annonce difficile, tu passera certainement par des moments de doutes, des moments de stress.<br/>
+							Tu te perdras surement entre famille, travail et papiers administratifs, tes études s'en retrouveront compromises dû à la précarité... :'(<br/>
+							Pas d'inquiétude, nous sommes là pour T'AIDER !!! :D<br/>
+						</p>
+					</center>
+					<ul>
+						A ce jour tu ne subviendra pas à tes besoins, mais voici la liste des organismes susceptibles de t'aider dans cette lutte :
+						<center>
+							<li class="red-clickable" id="CafHomeLink">CAF</li>
+							<li class="red-clickable" id="CrousHomeLink">CROUS</li>
+							<li class="red-clickable" id="BankHomeLink">BANK</li>
+							<li class="red-clickable" id="SecuHomeLink">SECU</li>
+						</center>
+					</ul>
+					<ul>
+						Ainsi que de tes besoins :
+						<center>
+							<li class="red-clickable">Logement</li>
+							<li class="red-clickable">Rentrées Financieres</li>
+							<li class="red-clickable">Pepin thune si pas assez</li>
+							<li class="red-clickable">Assurances</li>
+							<li class="red-clickable">Transports</li>
+						</center>
+					</ul>
+				</div>
+				<div style="flex:1;float: right;">
+					<img src="./assets/pubhome2.png"/>
+					<img src="./assets/pubhome3.png"/>
+				</div>
 			</div>
-			<div class="right">Nuit de l'info 2019</div>
+		</div>
+		<div id="Bank">
+			bank
+		</div>
+		<div id="Secu">
+			secu
+		</div>
+		<div id="Caf">
+			Caf
+		</div>
+		<div id="Crous">
+			Crous
+		</div>
+		<div id="Profil">
+				Profil
+			</div>
+		<div id="footer">
+			<hr/>
+			<div id="enderfooter">
+				<div style="flex:3">Create By :<br/>
+					Tanguy Bérasateguy<br/>
+					Samuel Caillot<br/>
+					Chloe Guimberteau<br/>
+					Alix Houlez<br/>
+					John Lavoix<br/>
+					Déborat Nash<br/>
+				</div>
+				<div style="float:right;flex:1;text-align: right;">Nuit de l'info 2019</div>
+			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="src/js/main.js"></script> 

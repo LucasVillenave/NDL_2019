@@ -1,7 +1,7 @@
 //faire page error en html + changement text
 
 class MainPage {
-    
+
     constructor ()
     {
         this.profil = {
@@ -21,16 +21,52 @@ class MainPage {
     toggle_content(page) {
         switch (page) {
             case "Home":
-                $("#elemClic").fadeIn("fast");
-                $("#affichage").hide();
+                $("#Home").fadeIn("fast");
+                $("#Caf").hide();
+                $("#Secu").hide();
+                $("#Bank").hide();
+                $("#Crous").hide();
+                $("#Profil").hide();
                 break;
-            case "CAF":
-                $("#elemClic").hide();
-                $("#affichage").fadeIn("fast");
+            case "Caf":
+                $("#Home").hide();
+                $("#Caf").fadeIn("fast");
+                $("#Secu").hide();
+                $("#Bank").hide();
+                $("#Crous").hide();
+                $("#Profil").hide();
                 break;
             case "Secu":
+                $("#Home").hide();
+                $("#Caf").hide();
+                $("#Secu").fadeIn("fast");
+                $("#Bank").hide();
+                $("#Crous").hide();
+                $("#Profil").hide();
                 break;
-            case "":
+            case "Bank":
+                $("#Home").hide();
+                $("#Caf").hide();
+                $("#Secu").hide();
+                $("#Bank").fadeIn("fast");
+                $("#Profil").hide();
+                $("#Crous").hide();
+                break;
+            case "Crous":
+                $("#Home").hide();
+                $("#Caf").hide();
+                $("#Secu").hide();
+                $("#Bank").hide();
+                $("#Crous").fadeIn("fast");
+                $("#Profil").hide();
+                break;
+            case "Profil":
+                $("#Home").hide();
+                $("#Caf").hide();
+                $("#Secu").hide();
+                $("#Bank").hide();
+                $("#Crous").hide();
+                $("#Profil").fadeIn("fast");
                 break;
         }
     }
@@ -38,16 +74,27 @@ class MainPage {
     init() {
         let tmp;
 
-        this.toggle_content("coucou");
+        this.toggle_content("Home");
 
-        //Click on add Img
-        tmp = $("#elemClic");
+        tmp = $("#CafHomeLink");
         tmp.on('click', () => {
-            this.toggle_content("bye");
+            this.toggle_content("Caf");
         });
-        tmp = $("#affichage");
+        tmp = $("#SecuHomeLink");
         tmp.on('click', () => {
-            this.toggle_content("coucou");
+            this.toggle_content("Secu");
+        });
+        tmp = $("#BankHomeLink");
+        tmp.on('click', () => {
+            this.toggle_content("Bank");
+        });
+        tmp = $("#CrousHomeLink");
+        tmp.on('click', () => {
+            this.toggle_content("Crous");
+        });
+        tmp = $("#toProfilHome");
+        tmp.on('click', () => {
+            this.toggle_content("Profil");
         });
     }
 }

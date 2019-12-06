@@ -2,6 +2,11 @@ h1{
     text-align: center;
 }
 
+
+li {
+    list-style-type: none;
+}
+
 body{
     background-color: #d1d1d1;
 }
@@ -27,9 +32,10 @@ body{
 
 .green{
     color: green;
+    position: absolute;
 }
 
-#footer {
+#enderfooter {
     display: flex;
     flex-direction: row;
 }
@@ -50,15 +56,19 @@ body{
 }
 
 #input_value1{
-    margin-left : 54px;
+    margin-left : 154px;
 }
 
 #input_value2{
-    margin-left : 10px;
+    margin-left : 110px;
+}
+
+#input_value3{
+    margin-left : 27px
 }
 
 #margin_left{
-    margin-left : 263px;
+    margin-left : 363px;
 }
 
 .carac_profile{
@@ -73,4 +83,21 @@ body{
 .profil_carac_container {
     display: flex;
     width : 25%;
+}
+
+#toProfilHome {
+    float: right;
+}
+
+#toProfilHome:hover {
+    cursor : pointer;
+}
+
+.red-clickable {
+    color: red;
+}
+
+.red-clickable:hover {
+    cursor: pointer;
+    align-items: ;
 }
