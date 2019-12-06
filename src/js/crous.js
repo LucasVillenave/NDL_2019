@@ -24,9 +24,11 @@ class MainPage {
             if($("#nomCrous").val()==this.nom && $("#prenomCrous").val()==this.prenom && $("#ageCrous").val()==this.age && $("#revenusCrous").val()==this.revenus){
                 if(this.revenus==0){
                     this.profile.Aide+=100;
+                    this.profile.Logement="Logement CROUS";
                 }
                 else{
                     this.profile.Aide+=200;
+                    this.profile.Logement="Logement CROUS";
                 }
                 $("#resultatCrous").text("Nom correct !");
                 $("#resultatCrous").addClass("green");
