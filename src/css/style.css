@@ -41,15 +41,19 @@ h1{
 }
 
 #input_value1{
-    margin-left : 54px;
+    margin-left : 154px;
 }
 
 #input_value2{
-    margin-left : 10px;
+    margin-left : 110px;
+}
+
+#input_value3{
+    margin-left : 27px
 }
 
 #margin_left{
-    margin-left : 263px;
+    margin-left : 363px;
 }
 
 .carac_profile{
