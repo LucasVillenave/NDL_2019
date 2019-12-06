@@ -46,6 +46,7 @@ body{
 
 .crousInputText{
     margin-top: 40px;
+    margin-left: 200px;
     font-size: 20px;
 }
 
@@ -85,7 +86,6 @@ body{
     width : 25%;
 }
 
-<<<<<<< HEAD
 #input_submittt{
     margin-left: 200px;
 }
@@ -107,7 +107,7 @@ body{
 
 #au_revoir{
     margin-left: 10px;
-=======
+}
 #toProfilHome {
     float: right;
 }
@@ -123,5 +123,12 @@ body{
 .red-clickable:hover {
     cursor: pointer;
     align-items: ;
->>>>>>> ab1bebc914d76d092bf13591e1620efce477dd69
+}
+
+.kabla:hover{
+    cursor: pointer;
+}
+
+.BLYAT:hover{
+    cursor: pointer;
 }
