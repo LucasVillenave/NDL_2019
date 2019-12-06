@@ -6,7 +6,7 @@ class MainPage {
         this.nom="Pelaise";
         this.prenom="Jon";
         this.age=19;
-        this.revenus=0;
+        this.revenus;
         this.init();
     }
 
@@ -24,10 +24,10 @@ class MainPage {
         tmp.on('click', () => {
             if($("#nomCrous").val()==this.nom && $("#prenomCrous").val()==this.prenom && $("#ageCrous").val()==this.age && $("#revenusCrous").val()==this.revenus){
                 if(this.revenus==0){
-                    aide+=100;
+                    this.profile.Aide+=100;
                 }
                 else{
-                    aide+=200;
+                    this.profile.Aide+=200;
                 }
                 $("#resultatCrous").text("Nom correct !");
                 $("#resultatCrous").addClass("green");
