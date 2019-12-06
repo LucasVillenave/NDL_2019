@@ -1,15 +1,14 @@
 class MainPage {
     constructor() {
-        this.option = {
-            favorite: false,
-            Recent: true
-        };
+        this.profil = {
+            Revenus: 0
+        }
         this.init();
     }
 
     init() {
         let tmp;
-        this.toggle_content("coucou");
+        //this.toggle_content("coucou");
         tmp = $("#input_value").keypress(function (e) {
             //if the letter is not digit then display error and don't type anything
             if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
@@ -21,14 +20,23 @@ class MainPage {
         //Click on add Img
         tmp = $("#input_submittt");
         tmp.on('click', () => {
-            if ($("#input_value").val() < 1500) {
-                $('#resp').text("eligible");
-                $('#resp').removeClass("red");
-                $('#resp').addClass("green");
+            $('#raspoutine').text("");
+            if ($("#bonjour").val() == this.profil.Revenus) {
+                if ($("#au_revoir").val() == "Logement CROUS") {
+                    $('#resp').text("eligible");
+                    $('#resp').removeClass("red");
+                    $('#resp').addClass("green");
+                } else {
+                    $('#resp').text("non eligible");
+                    $('#resp').removeClass("green");
+                    $('#resp').addClass("red");
+                    $('#raspoutine').text("redirect 404");
+                }
             } else {
                 $('#resp').text("non eligible");
                 $('#resp').removeClass("green");
                 $('#resp').addClass("red");
+                $('#raspoutine').text("redirect 404");
             }
         });
 
