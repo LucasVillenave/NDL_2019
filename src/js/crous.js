@@ -14,7 +14,6 @@ class MainPage {
     {
         switch (page) {
             case "step1":
-                $("#NomPrenom").hide();
                 break;
             case "bye":
                 $("#elemClic").hide();
@@ -26,13 +25,14 @@ class MainPage {
     init()
     {
         let tmp;
-
+        
         this.toggle_content("step1");
 
         //Click on add Img
-        tmp = $("#elemClic");
+        tmp = $("#valider");
         tmp.on('click', () => {
-            this.toggle_content("bye");
+            console.log($("#nomCrous").val());
+            console.log($("#prenomCrous").val());
         });
         tmp = $("#affichage");
         tmp.on('click', () => {
