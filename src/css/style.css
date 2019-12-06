@@ -2,8 +2,13 @@ h1{
     text-align: center;
 }
 
+
 li {
     list-style-type: none;
+}
+
+body{
+    background-color: #d1d1d1;
 }
 
 .truc{
@@ -13,7 +18,7 @@ li {
 }
 
 .trucs{
-    margin-top : 12%;
+    margin-top : 8%;
     color: black;
     font-size : 25px;
 }
@@ -40,21 +45,31 @@ li {
 }
 
 .crousInputText{
-    padding-top: 10px;
-    text-align: left;
+    margin-top: 40px;
+    text-align: justify;
     font-size: 20px;
 }
 
+.crousButton{
+    margin-left: 50%;
+    width: 20em;
+    height: 2em;
+}
+
 #input_value1{
-    margin-left : 54px;
+    margin-left : 154px;
 }
 
 #input_value2{
-    margin-left : 10px;
+    margin-left : 110px;
+}
+
+#input_value3{
+    margin-left : 27px
 }
 
 #margin_left{
-    margin-left : 263px;
+    margin-left : 363px;
 }
 
 .carac_profile{

@@ -6,23 +6,40 @@
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
 	<body>
-		<div id="crous">
-            <h1 class="red">Bienvenue sur la page d'aide au CROUS</h1>
-			
-			<form class="crousInputText">
-					Nom :<input type="text" id="nomCrous" value=""><br/>
-					Prénom :<input type="text" id="prenomCrous"size="16" value="">
-				<p>
-					<input type="button" id="validerCrous" value="Valider">
-					<div id="resultatCrous"></div>
-				</p>
-			</form>
-			
+		<div id="crous" style="display: flex;flex-direction: row;">
+			<div style="flex: 1;">
 
-            <!-- 
-            <p id="elemClic">Ne Clique pas Ici</p>
-            <p id="affichage">Ho Nooooooooooooooon</p>
-            -->
+			</div>
+			<div style="flex: 2;">
+				<h1 class="red">Bienvenue sur la page d'aide au CROUS</h1>
+			
+				<form>
+						Nom : <input type="text" id="nomCrous" value="" class="crousInputText"><br/>
+						Prénom : <input type="text" id="prenomCrous" size="16" value="" class="crousInputText"><br/>
+						Âge : <select id="ageCrous" size="1" class="crousInputText">
+							<option>18</option>
+							<option>19</option>
+							<option>20</option>
+							<option>21</option>
+							<option>22</option>
+							<option>23</option>
+							<option>24</option>
+							<option>25</option>
+							<option>26</option>
+							<option>27</option>
+							<option>28</option>
+							<option>29</option>
+							<option>30</option>
+						</select><br/>
+						Revenus : <input type="text" id="revenusCrous" value="" class="crousInputText">
+					<p>
+						<input type="button" id="validerCrous" value="Valider" class="crousButton">
+						<div id="resultatCrous"></div>
+					</p>
+				</form>
+			</div>
+			<div style="flex: 1;">
+			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="../js/crous.js"></script> 

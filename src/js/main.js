@@ -5,12 +5,15 @@ class MainPage {
     constructor ()
     {
         this.profil = {
-            nom: "Nom",
-            prenom: "Prenom",
-            logement: "Sans",
-            revenu: -1000,
-            montantActuelCompte: 400,
-            ratachementFiscal: "",
+            Nom: "Pelaise",
+            Prénom: "Jon",
+            Age: 19,
+            Logement: "Non Définit",
+            Revenus: 18000,
+            Montant_compte: 0,
+            ratachement_fiscal: "parents",
+            Travail: "aucun",
+            Aides: 0
         };
         this.init();
     }
