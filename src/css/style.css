@@ -30,6 +30,24 @@ body{
     color:red;
 }
 
+.margeNom{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 34px;
+}
+
+.margePrenom{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.margeAge{
+    margin-top: 40px;
+    font-size: 12px;
+    margin-left: 39px;
+}
+
 .green{
     color: green;
     position: absolute;
