@@ -6,14 +6,13 @@ class MainPage {
         this.nom="Pelaise";
         this.prenom="Jon";
         this.age=19;
-        this.revenus;
+        this.revenus=0;
         this.init();
     }
 
     init()
     {
         let tmp;
-        let aide=0;
 
         //Click on add Img
         tmp = $("#validerCrous");

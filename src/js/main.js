@@ -30,7 +30,8 @@ class MainPage {
                 break;
             case "Secu":
                 break;
-            case ""
+            case "":
+                break;
         }
     }
 
