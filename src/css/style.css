@@ -2,6 +2,21 @@ h1{
     text-align: center;
 }
 
+.truc{
+    margin-top : 12%;
+    margin-left : 7%;
+    color: black;
+}
+
+.trucs{
+    margin-top : 12%;
+    color: black;
+    font-size : 25px;
+}
+
+.input_t{
+    margin-left : 7%;
+}
 .red{
     color:red;
 }
@@ -15,8 +30,38 @@ h1{
     flex-direction: row;
 }
 
+#resp{
+    margin-left : 25px;
+}
+
 .crousInputText{
     padding-top: 10px;
     text-align: left;
     font-size: 20px;
+}
+
+#input_value1{
+    margin-left : 54px;
+}
+
+#input_value2{
+    margin-left : 10px;
+}
+
+#margin_left{
+    margin-left : 263px;
+}
+
+.carac_profile{
+    flex: 1;
+    text-align: left;
+}
+
+.profile_class {
+    text-align: left;
+}
+
+.profil_carac_container {
+    display: flex;
+    width : 25%;
 }
