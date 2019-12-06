@@ -3,9 +3,13 @@
 class MainPage {
     constructor ()
     {
-        this.option = {
-            favorite: false,
-            Recent: true
+        this.profil = {
+            nom: "Nom",
+            prenom: "Prenom",
+            logement: "Sans",
+            revenu: -1000,
+            montantActuelCompte: 400,
+            ratachementFiscal: "",
         };
         this.init();
     }
@@ -13,14 +17,17 @@ class MainPage {
     toggle_content(page)
     {
         switch (page) {
-            case "coucou":
+            case "Home":
                 $("#elemClic").fadeIn("fast");
                 $("#affichage").hide();
                 break;
-            case "bye":
+            case "CAF":
                 $("#elemClic").hide();
                 $("#affichage").fadeIn("fast");
                 break;
+            case "Secu":
+                break;
+            case ""
         }
     }
 
